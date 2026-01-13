@@ -12,8 +12,8 @@ Repository ini berisi project Ujian Akhir Semester (UAS) mata kuliah Pemrograman
 
 ## 🔗 Link Project (Syarat UAS)
 Berikut adalah kelengkapan dokumen manajemen project dan demo aplikasi:
-* **🎥 Video Prototype (YouTube):** [  ]
-* **📅 Timeline & Task (ClickUp):** [  ]
+* **🎥 Video Prototype (YouTube):** [ https://youtu.be/KNbv3_w1x_A?si=A_HfCOjhNkKK74MZ ]
+* **📅 Timeline & Task (ClickUp):** [ https://app.clickup.com/90181788673/v/s/90187358178 ]
 
 ## ✨ Fitur & Alur Aplikasi
 
