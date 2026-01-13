@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvLogoAddArticle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Tekpro"
+            android:textSize="32sp"
+            android:fontFamily="@font/russo_one"
+            android:textColor="#5E5E5E" />
+
+        <ImageView
+            android:id="@+id/iconUser"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_user"
+            android:contentDescription="User Profile" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/dividerHeader"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/headerLayout"
+        android:background="#D9D9D9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dividerHeader" android:layout_above="@+id/footerLayout"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etArticleTitle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:background="#FFFFFF"
+            android:hint="Judul Error"
+            android:paddingStart="15dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#5E5E5E"
+            android:textColorHint="#5E5E5E" />
+
+        <EditText
+            android:id="@+id/etArticleContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:background="#FFFFFF"
+            android:hint="Penjelasan"
+            android:gravity="top|start"
+            android:padding="15dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#5E5E5E"
+            android:textColorHint="#5E5E5E" />
+
+        <LinearLayout
+            android:id="@+id/layoutUploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/btnUploadImage"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_upload_image"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="Upload Image"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Image"
+                android:textSize="24sp"
+                android:fontFamily="@font/poppins"
+                android:textColor="#5E5E5E" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="20dp"
+            android:background="#D9D9D9"
+            android:text="cancel"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#60A7FF"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/btnSaveArticle"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="#D9D9D9"
+            android:text="save"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#60A7FF"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+</RelativeLayout>

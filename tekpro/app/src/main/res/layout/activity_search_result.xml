@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/headerResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvLogoResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tekpro"
+            android:textSize="32sp"
+            android:fontFamily="@font/russo_one"
+            android:textColor="#5E5E5E" />
+
+        <TextView
+            android:id="@+id/btnLoginResult"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:background="#D9D9D9"
+            android:text="login"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:textColor="#60A7FF" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etSearchAgain"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/headerResult"
+        android:layout_marginHorizontal="16dp"
+        android:background="#D9D9D9"
+        android:hint="Cari lagi..."
+        android:paddingStart="15dp"
+        android:fontFamily="@font/poppins"
+        android:textSize="16sp"
+
+        android:inputType="text"
+        android:imeOptions="actionSearch"
+        android:maxLines="1" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/etSearchAgain"
+        android:layout_marginTop="15dp"
+        android:background="#CCCCCC" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearchResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line"
+        android:padding="16dp" />
+</RelativeLayout>

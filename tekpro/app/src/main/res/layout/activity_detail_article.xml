@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/headerDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/btnBackDetail"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="#D9D9D9"
+            android:text="back"
+            android:textColor="#60A7FF"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins" />
+
+        <ImageView
+            android:id="@+id/iconUserDetail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_user"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btnLoginDetail"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:background="#D9D9D9"
+            android:text="login"
+            android:textColor="#60A7FF"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lineHeader"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/headerDetail"
+        android:background="#000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lineHeader"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Judul Artikel"
+                android:textColor="#60A7FF"
+                android:textSize="22sp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"/> <TextView
+            android:id="@+id/tvDetailAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By: Author Name"
+            android:textColor="#888888"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginBottom="15dp"/>
+
+            <ImageView
+                android:id="@+id/ivDetailImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_upload_image"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/tvDetailContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Isi penjelasan lengkap..."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins"
+                android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
